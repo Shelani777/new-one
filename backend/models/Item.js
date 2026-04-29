@@ -27,7 +27,7 @@ const itemSchema = new mongoose.Schema(
       default: "",
       trim: true,
     },
-    couponCode: {
+    materialType: {
       type: String,
       default: "",
       trim: true,
