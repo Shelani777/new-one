@@ -8,6 +8,7 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       price: "",
       description: "",
       imageUrl: "",
+      couponCode: "",
     }
   );
 
@@ -42,6 +43,9 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
         onChange={handleChange}
         required
       />
+
+      <label>Coupon Code</label>
+      <input name="couponCode" value={formData.couponCode} onChange={handleChange} />
 
       <label>Description</label>
       <textarea
